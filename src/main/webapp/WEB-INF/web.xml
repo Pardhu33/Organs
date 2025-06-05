@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.organ.UserRegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/registerUser</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>UserLogin</servlet-name>
+    <servlet-class>com.organ.UserLoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+    <servlet-name>UserLogin</servlet-name>
+    <url-pattern>/loginUser</url-pattern>
+	</servlet-mapping>
+	
+<servlet>
+    <servlet-name>DonorRegister</servlet-name>
+        <servlet-class>com.organ.DonorRegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DonorRegister</servlet-name>
+        <url-pattern>/donorRegister</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>DonorListServlet</servlet-name>
+        <servlet-class>com.organ.DonorListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DonorListServlet</servlet-name>
+        <url-pattern>/donorListServlet</url-pattern>
+    </servlet-mapping>    
+    
+    
+    <welcome-file-list>
+    <welcome-file>homepage.html</welcome-file>
+</welcome-file-list>
+    
+</web-app>

@@ -1,0 +1,28 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Donor Registration</title>
+        <script src="app.js"></script>
+    
+</head>
+<body>
+    <h2>Donor Registration</h2>
+    <form name="registerDonor" action="registerDonor" method="post">
+        <input type="text" name="first_name" placeholder="First Name" required><br>
+        <input type="text" name="last_name" placeholder="Last Name" required><br>
+        <input type="date" name="date_of_birth" required><br>
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br>
+        <input type="text" name="aadhar_number" placeholder="Aadhar Number" required><br>
+        <input type="number" name="age" placeholder="Age" required><br>
+        <input type="text" name="blood_group" placeholder="Blood Group" required><br>
+        <input type="text" name="organ" placeholder="Organ for Donation" required><br>
+        <input type="text" name="contact" placeholder="Contact" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
